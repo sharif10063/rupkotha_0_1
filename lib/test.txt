@@ -1,0 +1,30 @@
+Container(
+              // color:
+              width: 347,
+              height: 164.63,
+              child: Card(
+                color: Color(0xffceeaf8),
+                elevation: 3.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(35.0)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Image.asset(
+                            "/images/categorys/card1.png",
+                            fit: BoxFit.cover,
+                          )),
+                    ),
+                    Text("রুপকথার গল্প",
+                        style: TextStyle(
+                            fontFamily: "Kalpurush",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600)),
+                  ],
+                ),
+              ),
+            )
