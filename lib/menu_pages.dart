@@ -45,7 +45,7 @@ class CategoryPage extends StatelessWidget {
                           child: Image.asset(
                             '/images/categorys/card1.png',
                             fit: BoxFit.cover,
-                            width: double.infinity,
+                            // width: double.infinity,
                             height: 200,
                           ),
                         ),
