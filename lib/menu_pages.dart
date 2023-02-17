@@ -24,20 +24,40 @@ class CategoryPage extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Container(
+              // color:
               width: 347,
               height: 164.63,
-              margin: EdgeInsets.only(top: 147, left: 388),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 2,
-                    blurRadius: 2,
-                    offset: Offset(0, 2),
-                  ),
-                ],
+              padding: EdgeInsets.all(10),
+              child: Card(
+                color: Color(0xffd9ecfd),
+                elevation: 3.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(35.0)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset(
+                            '/images/categorys/card1.png',
+                            fit: BoxFit.cover,
+                            width: double.infinity,
+                            height: 200,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Text("রুপকথার গল্প",
+                        style: TextStyle(
+                            fontFamily: "Kalpurush",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600)),
+                  ],
+                ),
               ),
             )
           ]),
